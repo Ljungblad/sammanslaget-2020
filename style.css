@@ -1,0 +1,119 @@
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+.container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.title-wrapper {
+  width: 100vw;
+  padding-left: 10vw;
+  padding-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+.title-wrapper h1 {
+  font-size: 48px;
+  color: #1a1a1a;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.posters-wrapper {
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center;
+}
+
+.posters-wrapper img {
+  width: 80vw;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.posters-wrapper-desktop {
+  display: none;
+}
+
+.social-media-wrapper {
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20vh;
+}
+
+.social-media-wrapper img {
+  width: 80vw;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.social-media-text {
+  width: 80vw;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.social-media-text p {
+  color: #1a1a1a;
+  font-size: 18px;
+  font-family: "EB Garamond", serif;
+}
+
+footer img {
+  width: 100vw;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .posters-wrapper img {
+    width: 60vw;
+  }
+
+  .posters-wrapper-desktop {
+    margin-top: 40px;
+    display: flex;
+    width: 100vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .posters-wrapper-desktop img {
+    width: 25vw;
+    margin: 15px;
+  }
+
+  .social-media-wrapper img {
+    width: 60vw;
+  }
+
+  .social-media-wrapper {
+    margin-bottom: 40px;
+  }
+
+  .social-media-text {
+    width: 60vw;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .posters-wrapper img {
+    width: 60vw;
+  }
+}
