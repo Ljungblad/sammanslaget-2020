@@ -9,7 +9,7 @@
 }
 
 body {
-  background-color: whitesmoke;
+  background-color: rgb(231, 231, 231);
 }
 
 .container {
@@ -115,6 +115,21 @@ footer img {
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .posters-wrapper img {
-    width: 60vw;
+    width: 36vw;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .posters-wrapper-desktop img {
+    width: 25vw;
+    margin: 25px;
+  }
+
+  .social-media-wrapper img {
+    width: 36vw;
+  }
+
+  .social-media-text {
+    width: 36vw;
   }
 }
