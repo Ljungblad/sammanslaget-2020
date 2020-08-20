@@ -1,6 +1,7 @@
 /* FONTS */
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@1,600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
 
 * {
   margin: 0;
@@ -21,15 +22,24 @@ body {
 .title-wrapper {
   width: 100vw;
   padding-left: 10vw;
-  padding-top: 10vh;
-  margin-bottom: 10vh;
+  padding-top: 5vh;
+  margin-bottom: 5vh;
 }
 
 .title-wrapper h1 {
-  font-size: 48px;
   color: #1a1a1a;
-  font-family: "Source Sans Pro", sans-serif;
   margin-top: 20px;
+}
+
+.presentation-headline {
+  font-size: 22px;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.headline {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 48px;
+  text-transform: uppercase;
 }
 
 .posters-wrapper {
@@ -54,7 +64,8 @@ body {
   width: 100vw;
   flex-direction: column;
   align-items: center;
-  margin-top: 20vh;
+  margin-top: 5vh;
+  margin-bottom: 10vh;
 }
 
 .social-media-wrapper img {
@@ -65,7 +76,7 @@ body {
 
 .social-media-text {
   width: 80vw;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 20px;
 }
 
@@ -81,6 +92,10 @@ footer img {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  .title-wrapper {
+    padding-top: 10vh;
+  }
+
   .posters-wrapper img {
     width: 60vw;
   }
@@ -95,7 +110,7 @@ footer img {
   }
 
   .posters-wrapper-desktop img {
-    width: 25vw;
+    width: 35vw;
     margin: 15px;
   }
 
@@ -114,15 +129,46 @@ footer img {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .title-wrapper {
+    padding-top: 3vh;
+    padding-left: 0;
+  }
+
+  .title-wrapper h1 {
+    margin-top: 50px;
+  }
+
+  .presentation-headline {
+    text-align: center;
+  }
+
+  .headline {
+    font-size: 68px;
+    text-align: center;
+  }
+
   .posters-wrapper img {
     width: 36vw;
     margin-top: 30px;
     margin-bottom: 30px;
   }
 
+  .posters-wrapper-desktop {
+    margin-top: 40px;
+    display: flex;
+    width: 100vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   .posters-wrapper-desktop img {
-    width: 25vw;
+    width: 20vw;
     margin: 25px;
+  }
+
+  .social-media-wrapper {
+    margin-bottom: 80px;
   }
 
   .social-media-wrapper img {
