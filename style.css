@@ -19,16 +19,29 @@ body {
   flex-direction: column;
 }
 
+.banner {
+  width: 100%;
+  max-height: 180px;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(0.8);
+}
+
+.banner-wrapper {
+  position: relative;
+}
+
 .title-wrapper {
+  position: absolute;
   width: 100vw;
   padding-left: 10vw;
-  padding-top: 5vh;
   margin-bottom: 5vh;
+  z-index: 2;
 }
 
 .title-wrapper h1 {
-  color: #1a1a1a;
-  margin-top: 20px;
+  /* color: #1a1a1a; */
+  color: whitesmoke;
 }
 
 p {
@@ -44,12 +57,14 @@ p {
 .presentation-headline {
   font-size: 18px;
   font-family: "Quicksand", sans-serif;
+  margin-top: 20px;
 }
 
 .headline {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 48px;
   text-transform: uppercase;
+  margin-top: 20px;
 }
 
 .posters-wrapper {
@@ -102,8 +117,13 @@ footer img {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  .banner {
+    max-height: 200px;
+  }
+
   .title-wrapper {
-    padding-top: 10vh;
+    padding-top: 3vh;
+    margin-bottom: 2vh;
   }
 
   .poster-text {
@@ -148,18 +168,21 @@ footer img {
     padding-left: 0;
   }
 
+  .banner {
+    max-height: 250px;
+  }
+
   .title-wrapper h1 {
-    margin-top: 50px;
     padding-left: 20vw;
   }
 
   .presentation-headline {
-    /* text-align: center; */
+    margin-top: 50px;
   }
 
   .headline {
     font-size: 68px;
-    /* text-align: center; */
+    margin-top: 20px;
   }
 
   .poster-text {
